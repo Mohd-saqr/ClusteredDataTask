@@ -2,11 +2,11 @@ package com.progresssoft.clustereddatatask.services;
 
 import com.progresssoft.clustereddatatask.dto.DealDto;
 import com.progresssoft.clustereddatatask.dto.WebResponseDTO;
-import com.progresssoft.clustereddatatask.exception.DealAlreadyExists;
+
 import com.progresssoft.clustereddatatask.model.Deal;
 import org.springframework.http.ResponseEntity;
 
-import javax.transaction.Transactional;
+
 import java.util.Optional;
 
 public interface DealServices {

@@ -1,11 +1,13 @@
 package com.progresssoft.clustereddatatask.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.math.BigInteger;
@@ -16,6 +18,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @Builder
+@AllArgsConstructor
 public class Deal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,7 +34,7 @@ public class Deal {
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "deal_date")
     private Date dealDate;
-    @NotEmpty
+    @Min(0)
     @Column(name = "deal_amount")
     private BigInteger dealAmount;
 

@@ -2,7 +2,6 @@ package com.progresssoft.clustereddatatask.controller;
 
 import com.progresssoft.clustereddatatask.dto.DealDto;
 import com.progresssoft.clustereddatatask.dto.WebResponseDTO;
-import com.progresssoft.clustereddatatask.services.DealServices;
 import com.progresssoft.clustereddatatask.services.DealServicesImp;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
